@@ -1,0 +1,20 @@
+.highlight  {
+        background-color: aquamarine;
+        color: blueviolet;
+}
+
+.dialogue   {
+        background-color: chartreuse;
+        color: cornflowerblue;
+}
+
+.text       {
+        color: fuchsia;
+        background-color: bisque;
+}
+
+.hello      {
+        color: blue;
+        background-color: darkorange;
+}
+            
