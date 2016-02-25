@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html> 
+    
+    <head>
+    
+        <title> Javascript </title>
+
+        <script>
+            var confirm = function() {
+                alert("rawrrrr im a bear")
+            }
+            var counter = 0;
+            var helloWorld = function() {
+                console.log("If this function runs this text will appear in the console.");
+                alert("helloIAMTOM");
+                counter = counter + 300;
+                if (counter > 1200) {
+                alert ("You are a crazy man");
+                }
+             }
+            var stop = function() {
+                alert("WHY DID YOU CLICK ME");
+                counter = counter + 1;
+                console.log(counter);
+                if (counter > 5) {
+                alert ("Please stop clicking on me")
+                }
+                
+            }
+        </script>
+        
+    </head>
+    
+    <body> 
+    
+        <button type="button" onclick="helloWorld()"> hello hello hello hello </button>
+    
+        
+        <button type = "button" onmouseover="style.color='red'" onclick="stop()" onkeydown="style.color='blue'" ondblclick="style.backgroundColor='green'"> mouse over me, press a key or click me </button>
+        
+        <p>
+        
+        <img src = "http://i0.wp.com/cdn.bgr.com/2015/10/bear.jpg?w=625" onload = "confirm()">
+   
+        </p>
+        
+    </body>
+
+</html>
