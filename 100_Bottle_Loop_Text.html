@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+    
+        <title> For and While Loops </title>
+        
+        <script>
+        
+        var forBottles = function() {
+        
+            //first statement where the loop starts, where the loop is initiated--var count = 100
+        
+            //second statement: where we exit the loop. When the boolean evaluates to false, we exit the loop--count > -1; once count is NOT > -1, we exit the loop
+        
+            //third statement: something that you do each time you go through the loop--count = count - 1
+        
+            for (var count = 100; count > -1; count--) {
+                if (count === 0) {
+                    console.log("There are no more bottles of beer on the wall.");
+                } else {
+                    console.log("There are " + count + "bottles of beer on the wall.");
+                }
+            }
+        }
+        
+        </script>
+        
+    </head>
+
+    <body>
+    
+        <button onclick = forBottles()> 100 Bottles </button>
+    
+    
+    
+    
+    </body>
+
+
+</html>
