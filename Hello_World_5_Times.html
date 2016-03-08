@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>Warm Up Exercise #2</title>
+
+		<script>
+            var counter = 0
+            //variable count is assigned to 0
+            //This variables tracks how many times we've clicked the button
+            
+            //variable named helloWorld will count every time we click the button
+            
+			 var helloWorld = function() {
+                counter = counter + 1; 
+                 //count++; this is shorthand for count = count + 1
+                 if (counter > 0)
+                console.log("Why do you keep clicking me")
+                if (counter <= 5)
+                alert("Hello World");
+                 if (counter > 10)
+                 alert("How are you doing?");
+                 if (counter > 30)
+                 alert("Stop clicking me");
+                }
+		</script>
+		
+	</head>
+
+    
+    
+	<body>
+
+        <p>I'll only say hello if you talk to me at least five times...</p>
+        
+        <!-- for this button, onclick will call helloWorld() -->
+        
+    <button type = "button" onclick = "helloWorld()"> Hello World </button>
+		
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+    
+    <head>
+        <title> 5to100 </title>
+        
+        <script>
+         
+            var multsofFive = function(number) {
+               var count = 5;
+                //while count is less than or equal to 100, loop will continue
+                while (count <= number) {
+                    console.log(count);
+                    //print current value of count
+                    count = count + 5;
+                }
+            }
+            
+               var multstoThirty = function() {
+                var count = 5;
+                while (count <= 30) {
+                    console.log(count);
+                    count = count + 5;
+                }
+            }
+        
+        
+        </script>
+    
+    </head>
+
+    <body>
+    
+    
+        <button type = "button" onclick = multsofFive(100)> 5to100 </button>
+        <button type = "button" onclick = multstoThirty()> 5to30 </button>
+        <button type = "button" onclick = multsofFive(50)> 5to50 </button>
+        
+    <p> hello click all of the buttons and check the console log under developer tools </p>
+        
+        
+        
+    </body>
+
+
+</html>
