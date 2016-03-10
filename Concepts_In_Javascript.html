@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+    
+        <script>
+
+            // rpgCharacter = object
+            //                 {  str = 30
+            //   Properties    {   dex = 50
+            //                 {  int = 0
+            // Method  study = function() {
+            // int = int + 1
+            // }
+            // rpgCharacter.int => 0
+            
+            var count = 0;
+            
+            //instead of function(), just put {} to assign                      everything in the brackets to the properties of                 the variable. 
+            var tomStats = { //Use comma for more "stats"
+                age: 14, //age = 14; WILL NOT WORK
+                firstName: "Tom", //NEED PARENTHESES FOR WORDS?
+                lastName: "Hsu",
+                hobby: "Basketball",
+                secret: function() {
+                    if (count < 3) {
+                        console.log("Hellooooo");
+                    } else {
+                        console.log("Yooooo");
+                    }
+                    count++;
+                }
+            }
+                
+            var whoAmI = function() {
+                alert("Tom's age is " + tomStats.age);
+                    alert("Tom's full name is " + tomStats.firstName + " " + tomStats.lastName);
+                    alert("Tom likes " + tomStats.hobby);
+                 }
+            
+			var secret = function() {
+				var text = document.getElementById("changeMe");
+				if (count === 0) {
+					text.style.color = "lime";
+					text.style.fontSize = 50;
+					text.innerHTML = "CLASSIFIED";
+					document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+				}
+				tomStats.secret();
+				if (count > 3) {
+					text.innerHTML = "...somewhere?";
+				}
+			}
+
+                
+        </script>
+    
+    
+    </head>
+
+    <body>
+    
+    <button type="button" onclick="whoAmI()"> Click here for facts about Tom </button>
+        <button type="button" onclick="secret()"> Click here for a secret </button>
+    <p id = "changeMe"></p>
+        
+    </body>
+
+
+</html>
